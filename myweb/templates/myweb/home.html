@@ -1,9 +1,13 @@
 {% extends 'myweb/base.html' %}
 {% load static %}
 {% block content %}
-
 <h1>home</h1>
-<img src="{% static 'images/home.jpg'%}">
+<video autoplay muted loop>
+  <source src="{% static 'videos/home.mp4' type='video/mp4' %}">
+  Your browser does not support HTML5 video.
+</video>
+
+
 
 
 {% endblock %}
